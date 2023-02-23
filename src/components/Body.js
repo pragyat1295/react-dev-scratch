@@ -30,7 +30,7 @@ const Body = () => {
     getRestaurants();
   }, []);
 
-  return fillteredRestaurants === 0 ? (
+  return fillteredRestaurants.length === 0 ? (
     <Shimmer />
   ) : (
     <>
