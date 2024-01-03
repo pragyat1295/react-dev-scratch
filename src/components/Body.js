@@ -27,7 +27,7 @@ const Body = () => {
   }
   useEffect(() => {
     // API Call
-    getRestaurants();
+    // getRestaurants();
   }, []);
 
   return fillteredRestaurants.length === 0 ? (

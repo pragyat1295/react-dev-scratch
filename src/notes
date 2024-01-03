@@ -1,0 +1,35 @@
+1. package.json is the configuration for npm
+
+2. 2 types of dependencies we can install:
+    a) dev dependencies: generally required in the developing phase
+    b) normal dependencies: you require in production as well. 
+
+3. Let the version is 2.8.3 
+tilde(~) and caret(^)
+    a) if you put ^ then it will install the minor version like (2.8.4) automatically
+    b) if you put ~ then it will update only major versions of it like  2.8.3 to 3.0.0
+
+4. package.lock.json will keep the track of all the versions that has been installed
+on the environment. It comes with the key called "intigrity" which is the hash to insure that everything will work in both local as well as in production.
+
+5. Node_modules will install all the dependencies of the library which we will be neded in our developement. Dependencies with other dependencies are known as (transitive dependencies) You can check in node_modules and inside folder check their package.json.
+
+7. After installing parcel you need to run npx parcel index.html(your source file).
+ 
+8. npx means executing a package
+
+9. Because of the File watcher algorithms your bundler(here it is parcel) do HMR(Hot module replacement) and because of this we can see any change in our code leads to reload of the browser.
+
+10. Parcel Properties:
+    a) Dev Build
+    b) Parcel-cache for Faster builds
+    c) HMR(Hot module replacement)
+    d) Local server
+    e) File watcher Algo(written in c++)
+    f) Image optimization
+    g) during production build it will do minification as well (bundeling)
+    h) Compress your code
+    i) Differential Bundling - to support older browsers
+    j) tree-shacking algorithm (removing unused codes for you)
+    k) code splitting (only file which has been changed will get affected)
+
